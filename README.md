@@ -2,13 +2,6 @@
 
 <br />
 
-<div align="center">
-
-<a href="">[![Author](https://img.shields.io/badge/Author-miroslav-brightgreen.svg)](https://www.linkedin.com/in/miroslav-pejic-976a07101/)</a>
-<a href="">![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)</a>
-<a href="">[![Community](https://img.shields.io/badge/Community-forum-pink.svg)](https://discord.gg/rgGYfeYW3N)</a>
-
-</div>
 
 <p align="center">MiroTalk BRO Live Broadcast allows to broadcast live video, audio and screen stream to all connected users (viewers) and receive messages from them. Can handle unlimited rooms, without time limitations, each having a broadcast and many viewers.</a></p>
 
@@ -24,11 +17,6 @@
     <a href="https://bro.mirotalk.com"><img src="./public/assets/images/ui.png"></a>
 </p>
 
----
-
-<p align="center">
-    Join our community for questions, discussions, and support on <a href="https://discord.gg/rgGYfeYW3N">Discord</a>
-</p>
 
 ---
 
@@ -81,31 +69,6 @@ The app should now be running on your http://localhost:3016, you can choose if j
 The `Broadcaster` stream the audio, video or screen to all connected viewers and can receive messages from them.
 
 The `Viewer` get the audio, video or screen that is streamed from the broadcaster and can send messages to it.
-
-<details open>
-<summary>Hetzner & Contabo</summary>
-
-<br/>
-
-[![Hetzner](public/assets/images/hetzner.png)](https://hetzner.cloud/?ref=XdRifCzCK3bn)
-
-This application is running for `demonstration purposes` on [Hetzner](https://www.hetzner.com/), one of `the best` [cloud providers](https://www.hetzner.com/cloud) and [dedicated root servers](https://www.hetzner.com/dedicated-rootserver).
-
----
-
-Use [my personal link](https://hetzner.cloud/?ref=XdRifCzCK3bn) to receive `€⁠20 IN CLOUD CREDITS`.
-
----
-
-[![Contabo](public/assets/images/contabo.png)](https://www.dpbolvw.net/click-101027391-14462707)
-
-Experience also top-tier German web hosting – dedicated servers, VPS, and web hosting at `unbeatable prices`. Reliable, secure, and backed by 24/7 support. [Explore now here](https://www.dpbolvw.net/click-101027391-14462707)
-
----
-
-To set up your own instance of `MiroTalk BRO` on a dedicated cloud server, please refer to our comprehensive [self-hosting documentation](https://docs.mirotalk.com/mirotalk-bro/self-hosting/). This guide will walk you through the process step by step, ensuring a smooth and successful deployment.
-
-</details>
 
 </details>
 
@@ -178,55 +141,6 @@ MiroTalk BRO is free and open-source under the terms of AGPLv3 (GNU Affero Gener
 To obtain a [MiroTalk BRO license](https://docs.mirotalk.com/license/licensing-options/) with terms different from the AGPLv3, you can conveniently make your [purchase on CodeCanyon](https://codecanyon.net/item/mirotalk-bro-webrtc-p2p-live-broadcast/45887113). This allows you to tailor the licensing conditions to better suit your specific requirements.
 
 </details>
-
-<details open>
-<summary>Support</summary>
-
-<br/>
-
-If MiroTalk BRO has been useful for you and want to contribute to its continued success, consider becoming a backer or sponsor by visiting [this link](https://github.com/sponsors/miroslavpejic85).
-
-Your support means the world to us, and together, we can make MiroTalk Live Broadcast even better! Thank you for being part of this amazing journey. 🌟
-
-</details>
-
----
-
-## Diving into Additional MiroTalk Projects:
-
-<details>
-<summary>MiroTalk SFU</summary>
-
-<br>
-
-Try also [MiroTalk SFU](https://github.com/miroslavpejic85/mirotalksfu) `selective forwarding unit` real-time video conferences, optimized for large groups. `Unlimited time, unlimited concurrent rooms` each having 8+ participants, up to ~ 100 per single CPU.
-
-</details>
-
-<details>
-<summary>MiroTalk P2P</summary>
-
-<br/>
-
-Try also [MiroTalk P2P](https://github.com/miroslavpejic85/mirotalk) `peer to peer` real-time video conferences, optimized for small groups. `Unlimited time, unlimited concurrent rooms` each having 5-8 participants.
-
-</details>
-
-<details>
-<summary>MiroTalk C2C</summary>
-
-<br>
-
-Try also [MiroTalk C2C](https://github.com/miroslavpejic85/mirotalkc2c) `peer to peer` real-time video conferences, optimized for cam 2 cam. `Unlimited time, unlimited concurrent rooms` each having 2 participants.
-
-</details>
-
-<details>
-<summary>MiroTalk WEB</summary>
-
-<br>
-
-Try also [MiroTalk WEB](https://github.com/miroslavpejic85/mirotalkwebrtc) a platform that allows for the management of an `unlimited number of users`. Each user must register with their email, username, and password, after which they gain access to their `personal dashboard`. Within the dashboard, users can `manage their rooms and schedule meetings` using the desired version of MiroTalk on a specified date and time. Invitations to these meetings can be sent via email, shared through the web browser, or sent via SMS.
 
 </details>
 
