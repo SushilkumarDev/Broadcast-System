@@ -35,7 +35,7 @@ To get started with the BRO Live Broadcast application, you can run it using Nod
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/broadcast-system.git
+   git clone https://github.com/SushilkumarDev/broadcast-system.git
    cd broadcast-system
    ```
 
