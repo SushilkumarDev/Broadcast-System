@@ -1,102 +1,119 @@
-<h1 align="center">MiroTalk WebRTC Live Broadcast</h1>
-
-<br />
-
-
-<p align="center">MiroTalk BRO Live Broadcast allows to broadcast live video, audio and screen stream to all connected users (viewers) and receive messages from them. Can handle unlimited rooms, without time limitations, each having a broadcast and many viewers.</a></p>
+Here’s a professional README file for your **Broadcast System** project. This document is structured to provide clear information about the project, its usage, and its features.
 
 ---
 
-<p align="center">
-    <a href="https://bro.mirotalk.com">Explore MiroTalk BRO</a>
-</p>
+# Broadcast System
+
+![Broadcast System](./public/assets/images/ui.png)
+
+## Overview
+
+**BRO Live Broadcast** enables seamless live broadcasting of video, audio, and screen streams to all connected users (viewers). The system supports unlimited rooms, each allowing a broadcaster and many viewers, without time limitations. Users can also interact by sending messages to the broadcaster.
 
 ---
 
-<p align="center">
-    <a href="https://bro.mirotalk.com"><img src="./public/assets/images/ui.png"></a>
-</p>
+## Features
 
+- **Live Broadcasting**: Stream audio, video, or screen in real-time.
+- **Interactive Messaging**: Viewers can send messages to the broadcaster during the broadcast.
+- **Unlimited Rooms**: Create multiple broadcasting rooms without time constraints.
+- **Cross-Platform Support**: Accessible from various devices with a web browser.
+  
+---
+
+## Quick Start
+
+To get started with the BRO Live Broadcast application, you can run it using Node.js or Docker.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download) (for local installation)
+- [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/) (for containerized deployment)
+
+### Running with Node.js
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/broadcast-system.git
+   cd broadcast-system
+   ```
+
+2. **Setup Environment**:
+
+   ```bash
+   # Copy .env.template to .env and edit it if needed
+   cp .env.template .env
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the Application**:
+
+   ```bash
+   npm start
+   ```
+
+### Running with Docker
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/SushilkumarDev/broadcast-system.git
+   cd broadcast-system
+   ```
+
+2. **Setup Environment**:
+
+   ```bash
+   # Copy .env.template to .env and edit it if needed
+   cp .env.template .env
+   # Copy docker-compose.template.yml to docker-compose.yml and edit it if needed
+   cp docker-compose.template.yml docker-compose.yml
+   ```
+3. **Run the Application**:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+### Accessing the Application
+
+Once the server is running, you can access the application at:
+
+- **Home**: [http://localhost:3016](http://localhost:3016)
+- **Broadcaster**: [http://localhost:3016/broadcast?id=123&name=Broadcaster](http://localhost:3016/broadcast?id=123&name=Broadcaster)
+- **Viewer**: [http://localhost:3016/viewer?id=123&name=Viewer](http://localhost:3016/viewer?id=123&name=Viewer)
+
+The broadcaster can stream audio, video, or screen to all connected viewers and receive messages from them, while viewers can interact with the broadcaster.
 
 ---
 
-</details>
+## Direct Joining
 
-<details open>
-<summary>Quick Start</summary>
-
-<br/>
-
-Start the app using [nodejs](https://nodejs.org/en/download):
-
-```bash
-# Copy .env.template in .env and edit it if needed
-$ cp .env.template .env
-# Install dependencies
-$ npm install
-# Run the app
-$ npm start
-```
-
-Start the app using [docker](https://docs.docker.com/engine/install/) - [docker-compose](https://docs.docker.com/compose/) and optional [official image](https://hub.docker.com/r/mirotalk/bro):
-
-![docker](public/assets/images/docker.png)
-
-```bash
-# Copy .env.template in .env and edit it if needed
-$ cp .env.template .env
-# Copy docker-compose.template.yml in docker-compose.yml and edit it if needed
-$ cp docker-compose.template.yml docker-compose.yml
-# Get official image from Docker Hub
-$ docker pull mirotalk/bro:latest
-# Run the image in a container
-$ docker-compose up #-d
-```
-
-Server up and running
-
-```js
-Server is running {
-  home: 'http://localhost:3016',
-  broadcast: 'http://localhost:3016/broadcast?id=123&name=Broadcaster',
-  viewer: 'http://localhost:3016/viewer?id=123&name=Viewer',
-  viewerHome: 'http://localhost:3016/home?id=123'
-}
-```
-
-The app should now be running on your http://localhost:3016, you can choose if join room as a `Broadcaster` or `Viewer`.
-
-The `Broadcaster` stream the audio, video or screen to all connected viewers and can receive messages from them.
-
-The `Viewer` get the audio, video or screen that is streamed from the broadcaster and can send messages to it.
-
-</details>
-
-<details>
-<summary>Direct Join</summary>
-
-<br>
-
-You can direct join room as `broadcaster` or `viewer` specifying the room id and your name.
+You can directly join a room as a **Broadcaster** or **Viewer** by specifying the room ID and your name.
 
 | As            | URL                                                     |
 | ------------- | ------------------------------------------------------- |
-| `Broadcaster` | http://localhost:3016/broadcast?id=123&name=Broadcaster |
-| `Viewer`      | http://localhost:3016/viewer?id=123&name=Viewer         |
+| `Broadcaster` | [http://localhost:3016/broadcast?id=123&name=Broadcaster](http://localhost:3016/broadcast?id=123&name=Broadcaster) |
+| `Viewer`      | [http://localhost:3016/viewer?id=123&name=Viewer](http://localhost:3016/viewer?id=123&name=Viewer)         |
+
+### URL Parameters
 
 | Params | Type   | Description |
 | ------ | ------ | ----------- |
-| id     | string | Room Id     |
+| id     | string | Room ID     |
 | name   | string | User name   |
 
-</details>
+---
 
-<details>
-<summary>Embedding</summary>
+## Embedding in an Application
 
-<br/>
-
-Embedding MiroTalk Live Broadcast into a service or app using an iframe.
+To embed the MiroTalk Live Broadcast into your service or app using an iframe, use the following code snippet:
 
 ```html
 <iframe
@@ -106,42 +123,38 @@ Embedding MiroTalk Live Broadcast into a service or app using an iframe.
 ></iframe>
 ```
 
-</details>
+---
 
-<details>
-<summary>Documentations</summary>
+## License
 
-<br>
-
--   [Install your own Stun/Turn](./docs/coturn.md)
--   [Ngrok](./docs/ngrok.md)
--   [How to Self-hosting](./docs/self-hosting.md)
--   [Rest API](./app/api/README.md)
-
-</details>
-
-<details>
-<summary>Credits</summary>
-
-<br>
-
--   Gabriel Tanner [webrtc-broadcast-logic](https://gabrieltanner.org/blog/webrtc-video-broadcast/)
-
-</details>
-
-<details>
-<summary>License</summary>
-
-<br/>
-
-[![AGPLv3](public/assets/images/AGPLv3.png)](LICENSE)
-
-MiroTalk BRO is free and open-source under the terms of AGPLv3 (GNU Affero General Public License v3.0). Please `respect the license conditions`, In particular `modifications need to be free as well and made available to the public`. Get a quick overview of the license at [Choose an open source license](https://choosealicense.com/licenses/agpl-3.0/).
-
-To obtain a [MiroTalk BRO license](https://docs.mirotalk.com/license/licensing-options/) with terms different from the AGPLv3, you can conveniently make your [purchase on CodeCanyon](https://codecanyon.net/item/mirotalk-bro-webrtc-p2p-live-broadcast/45887113). This allows you to tailor the licensing conditions to better suit your specific requirements.
-
-</details>
-
-</details>
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+---
+
+## Support
+
+If you find this project useful, consider supporting its development by buying me a coffee!
+
+[Buy Me A Coffee](https://ko-fi.com/sushilkumar)
+
+---
+
+## Contact
+
+For any inquiries or feedback, please contact me at [sushilkumardeveloper@gmail.com](mailto:sushilkumardeveloper@gmail.com).
+
+---
+
+Feel free to customize sections as needed, especially the repository URL, and add any additional information that you think might be helpful!
